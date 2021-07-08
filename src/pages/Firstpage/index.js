@@ -26,7 +26,7 @@ function Firstpage() {
             <Box className='header'>
                 <Box className='logo'>
                     <a href='/'>
-                        <img alt='' src={baseUrl + 'forsecond/logo.png'} />
+                        <img alt='' src={baseUrl + 'image//logo.png'} />
                     </a>
                     <Button className='font2' variant="outlined" color="secondary">
                         connect
@@ -43,7 +43,7 @@ function Firstpage() {
                                     <Grid item xs={12} sm={12} md={6}>
                                         <Box className='card-header font3'>
                                             <Box component='span'>AVAILABLE BALANCE</Box>
-                                            <img alt='' className='action' src={baseUrl + 'forsecond/action1.png'} />
+                                            <img alt='' className='action' src={baseUrl + 'image//action1.png'} />
                                         </Box>
                                         <Box className='card-content'>
                                             <Box className='grey-border1' mt={2} pb={1.3}>
@@ -63,7 +63,7 @@ function Firstpage() {
                                     <Grid item xs={12} sm={12} md={6}>
                                         <Box className='card-header font3'>
                                             <Box component='span'>YOUR TRANSACTION</Box>
-                                            <img alt='' className='action' src={baseUrl + 'forsecond/action2.png'} />
+                                            <img alt='' className='action' src={baseUrl + 'image//action2.png'} />
                                         </Box>
                                         <Box className='card-content'>
                                             <Box className='grey-border1' mt={2} pb={1.3}>
@@ -104,7 +104,7 @@ function Firstpage() {
                                 <Box className='card-period'>
                                     <Box className='card-header font3'>
                                         <Box component='span'>SELECT YOUR LOCKING PERIOD</Box>
-                                        <img alt='' className='action' src={baseUrl + 'forsecond/action3.png'} />
+                                        <img alt='' className='action' src={baseUrl + 'image//action3.png'} />
                                     </Box>
                                     <Grid className='grey-border2' container spacing={3}>
                                         <Grid item md={6}>
