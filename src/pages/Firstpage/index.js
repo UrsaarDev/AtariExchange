@@ -26,12 +26,12 @@ function Firstpage() {
                                     </Grid>
                                     <Grid item xs={12} sm={12} md={6}>
                                         <CardHeader title='YOUR TRANSACTION' src='image/action2.png'/>
-                                        <Transaction mythis={this} setAmount={setAmount}/>
+                                        <Transaction setAmount={setAmount}/>
                                     </Grid>
                                 </Grid>
                                 <Box className='card-period'>
                                     <CardHeader title='SELECT YOUR LOCKING PERIOD' src='image/action3.png'/>
-                                    <LockingPeriod mythis={this} amountValue={amountValue} />
+                                    <LockingPeriod amountValue={amountValue} />
                                 </Box>
                             </Box>
                         </Box>
