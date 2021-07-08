@@ -1,188 +1,170 @@
-@font-face {
-    font-family: MonsterRat;
-    src        : url('http://localhost:3000/font/MONTSERRAT-REGULAR.OTF');
-}
-
-@font-face {
-    font-family: MonsterRat_Bold;
-    src        : url('http://localhost:3000/font/MONTSERRAT-BOLD.OTF');
-}
-
-html,
-body {
-    margin: 0;
-    height: 100%;
-}
-
-#root {
-    height: 100%;
-}
-
-body * {
-    color      : white;
-    font-family: MonsterRat;
-}
-
-article {
-    text-align: center;
-    font-size : 12px;
-}
-
-//FirstPage
-
-.container {
-    background-image: linear-gradient(rgb(18, 16, 17) 0%, rgb(18, 16, 17) 70%, rgb(6, 6, 6) 100%);
-    position        : relative;
-    display         : flex;
-    flex-direction  : column;
-    height          : 100%;
-}
-
-.topbar {
-    position  : absolute;
-    top       : 0px;
-    left      : 0px;
-    height    : 10px;
-    width     : 100%;
-    background: black;
-}
+$baseUrl : 'http://localhost:3000/';
 
 .header {
-    flex           : 1;
-    display        : flex;
-    justify-content: space-between;
+    padding-top   : 20px;
+    padding-bottom: 20px;
 
-    .header-search {
-        :nth-child(1) {
-            width           : 60%;
-            background-color: rgb(54, 54, 54);
-            border          : 1px solid grey;
-            padding         : 5px;
-            align-self      : center;
-            margin-right    : 1%;
-        }
+    .logo {
+        margin-left: 15%;
+        width      : 70%;
 
-        :nth-child(2) {
-            align-self      : center;
-            border          : none;
-            border-radius   : 10px;
-            padding         : 10px;
-            background-image: linear-gradient(rgb(15, 15, 15), rgb(0, 0, 0));
-            font-size       : smaller;
-        }
-    }
-
-    .header-connect {
-        .btn-exchange {
-            align-self   : center;
-            border       : none;
-            border-radius: 10px;
-            padding      : 10px;
-            font-size    : smaller;
-            display      : flex;
-
-            svg, span {
-                align-self: center;
+        a {
+            padding-top   : .3125rem;
+            padding-bottom: .3125rem;
+            img {
+                width:120px;
             }
-        }
-
-        .btn-connect {
-            align-self      : center;
-            border          : none;
-            border-radius   : 10px;
-            padding         : 10px;
-            box-shadow      : 0px 5px 4px 0px black;
-            background-color: rgb(35, 35, 37);
-            font-size       : smaller;
-        }
-    }
-}
-
-.header * {
-    font-size: 13px;
-}
-
-.header-connect+.header-search {
-    margin-left: 10%;
-}
-
-.content-three-divs * {
-    text-transform: uppercase;
-}
-
-.content {
-    flex   : 3;
-    display: flex;
-
-    .content-three-divs {
-        flex          : 1;
-        display       : flex;
-        flex-direction: column;
-        .gradient-div {
-            margin          : 5px;
-            height          : 75px;
-            border-radius   : 10px;
-            border          : 1px solid black;
-            box-shadow      : 0px 7px 3px 1px black;
-            background-image: linear-gradient(rgb(6, 6, 6) 0%, rgb(30, 30, 30) 96%, rgb(203, 203, 203) 96%, rgb(203, 203, 203) 100%);
-        }
-    
-        .total-pending {
-            display        : flex;
-            justify-content: center;
-    
-            .total-div {
-                flex         : 1;
-                padding-left : 20px;
-                padding-right: 20px;
+            @media screen and (max-width: 640px) {
+                img {
+                    width:100px;
+                }
             }
-    
-            .pending-div {
-                flex         : 1;
-                padding-left : 20px;
-                padding-right: 20px;
+            @media screen and (max-width: 414px) {
+                img {
+                    width:80px;
+                }
             }
+
+    
         }
-    
-        .queue-position {
-            display        : flex;
-            justify-content: center;
-    
-            .queue-div {
-                flex         : 1;
-                padding-left : 20px;
-                padding-right: 20px;
-                .gradient-div {
-                    margin-top: 20%;
+
+        .MuiButton-root {
+            float        : right;
+            border       : 2px solid white;
+            border-radius: 25px;
+            padding      : 4px 20.3px;
+            height       : 88%;
+
+            .MuiButton-label {
+                font-family: "Roboto", "Helvetica", "Arial", "sans-serif";
+                font-size  : 18px !important;
+                font-weight: 550 !important;
+            }
+
+            @media screen and (max-width: 640px) {
+                .MuiButton-label {
+                    font-size: 14px !important;
+                }
+            }
+
+            @media screen and (max-width: 414px) {
+                .MuiButton-label {
+                    font-size: 10px !important;
                 }
             }
         }
-    
-        .blank {
-            flex: 1;
-        }
-    }
-
-    .content-logo {
-        flex   : 1;
-        display: flex;
-
-        :nth-child(1) {
-            flex   : 10;
-            display: flex;
-
-            .logo {
-                width     : 100%;
-                align-self: center;
-            }
-        }
-
-        :nth-child(2) {
-            flex: 1;
-        }
     }
 }
 
-.menu-item {
-    color: black !important;
+.content {
+    padding-top   : 50px;
+    padding-bottom: 50px;
+
+    .card-header {
+        background-image       : url($baseUrl+'forsecond/cardheaderback.png');
+        background-size        : 100% 100%;
+        border-top-left-radius : 15px;
+        border-top-right-radius: 15px;
+        display                : flex;
+        padding                : 10px 10px 10px 15px;
+
+        .action {
+            align-self  : center;
+            margin-left : auto;
+            margin-right: 5px;
+            width       : 24px;
+            height      : 26px;
+        }
+        @media screen and (max-width: 640px) {
+            .action {
+                width:22px;
+                height:24px;
+            }
+        }
+        @media screen and (max-width: 414px) {
+            .action {
+                width:20px;
+                height:22px;
+            }
+        }
+    }
+
+    .card-two {
+        padding: 12px;
+    }
+
+    .card-period {
+        border-radius      : 15px;
+        width              : 80%;
+        margin             : auto;
+        background-image   : url($baseUrl+'forsecond/verti_gradi.png');
+        background-size    : 49px 100%;
+        background-position: 0;
+        background-repeat  : no-repeat;
+        background-color   : rgba(61, 14, 14, .442);
+
+        .MuiGrid-root {
+            padding-right: 20px;
+        }
+    }
+
+    .card-content {
+        padding                   : 20px;
+        border-bottom-left-radius : 15px;
+        border-bottom-right-radius: 15px;
+        background                : rgba(61, 14, 14, .442);
+    }
+
+    .grey-border1 {
+        border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+
+        .card-input {
+            line-height     : inherit;
+            font-family     : inherit;
+            font-size       : inherit !important;
+            float           : right;
+            border          : none;
+            outline         : none;
+            padding-bottom  : 10px;
+            max-width       : 150px;
+            background-color: transparent;
+            border-bottom   : 1px solid #d13737 !important;
+        }
+    }
+
+    .grey-border2 {
+        border-bottom: 1px solid hsla(0, 0%, 100%, .1);
+        margin       : auto;
+        width        : auto;
+
+        .MuiGrid-root {
+            padding: 5px !important;
+        }
+    }
+
+    .grey-border2:nth-child(6) {
+        border-bottom: unset;
+    }
+
+    .radio-group {
+        margin-top: -7px;
+    }
+
+    .eth-string {
+        color: #e31e2d;
+    }
+
+    .submit-btn {
+        padding      : 14px;
+        width        : 80%;
+        background   : #0dbf4a;
+        font-size    : 22px;
+        color        : white;
+        border       : none;
+        outline      : none;
+        font-weight  : 600;
+        border-radius: 58px;
+        line-height  : inherit;
+        margin-bottom: 20px;
+    }
 }
