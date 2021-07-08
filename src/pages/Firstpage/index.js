@@ -31,7 +31,7 @@ function Firstpage() {
                                 </Grid>
                                 <Box className='card-period'>
                                     <CardHeader title='SELECT YOUR LOCKING PERIOD' src='image/action3.png'/>
-                                    <LockingPeriod mythis={this}/>
+                                    <LockingPeriod mythis={this} amountValue={amountValue} />
                                 </Box>
                             </Box>
                         </Box>
