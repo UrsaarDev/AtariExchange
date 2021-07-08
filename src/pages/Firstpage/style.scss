@@ -61,7 +61,7 @@ $baseUrl : 'http://localhost:3000/';
     padding-bottom: 50px;
 
     .card-header {
-        background-image       : url($baseUrl+'image//cardheaderback.png');
+        background-image       : url($baseUrl+'image/cardheaderback.png');
         background-size        : 100% 100%;
         border-top-left-radius : 15px;
         border-top-right-radius: 15px;
@@ -97,7 +97,7 @@ $baseUrl : 'http://localhost:3000/';
         border-radius      : 15px;
         width              : 80%;
         margin             : auto;
-        background-image   : url($baseUrl+'image//verti_gradi.png');
+        background-image   : url($baseUrl+'image/verti_gradi.png');
         background-size    : 49px 100%;
         background-position: 0;
         background-repeat  : no-repeat;
