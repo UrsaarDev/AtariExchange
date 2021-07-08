@@ -26,7 +26,7 @@ function Firstpage() {
                                     </Grid>
                                     <Grid item xs={12} sm={12} md={6}>
                                         <CardHeader title='YOUR TRANSACTION' src='image/action2.png'/>
-                                        <Transaction mythis={this} amountValue={amountValue} setAmount={setAmount}/>
+                                        <Transaction mythis={this} setAmount={setAmount}/>
                                     </Grid>
                                 </Grid>
                                 <Box className='card-period'>
