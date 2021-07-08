@@ -1,12 +1,14 @@
 
-import { Grid, Box } from "@material-ui/core";
 import React from 'react';
+import { Grid, Box } from "@material-ui/core";
+
 import CardHeader from '../../components/CardHeader';
-import './style.scss';
 import AvailableBalance from "../../components/AvailableBalance";
 import Transaction from "../../components/Transaction";
 import LockingPeriod from "../../components/LockingPeriod";
 import Header from "../../components/Header";
+
+import './style.scss';
 
 function Firstpage() {
     const [amountValue, setAmount] = React.useState('0');
